@@ -16,8 +16,8 @@ module I18n::Tasks
       attr_writer :locales
 
       DEFAULTS = {
-        read:  ['config/locales/%{locale}.yml'],
-        write: ['config/locales/%{locale}.yml']
+        read:  ['config/locales/**/*%{locale}.yml'],
+        write: ['config/locales/**/*%{locale}.yml']
       }.freeze
 
       def initialize(config = {})
